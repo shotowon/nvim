@@ -1,0 +1,6 @@
+require("config.options")
+require("config.globals")
+require("config.lazy")
+require("config.keybindings")
+require("config.lsps")
+require("config.profile")
