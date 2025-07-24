@@ -1,1 +1,5 @@
-vim.keymap.set('n', '<leader>pv', function() vim.cmd('Ex') end)
+vim.keymap.set('n', '<leader>pv', function() 
+	local path = vim.fn.expand("%:p:h")
+	vim.cmd('e ' .. path)
+end)
+vim.keymap.set('v', '<C-y>', '"+y', { noremap = true, silent = true })
