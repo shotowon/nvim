@@ -1,3 +1,2 @@
-require("lspconfig").lua_ls.setup {
-	capabilites = require('blink.cmp').get_lsp_capabilities()
-}
+vim.lsp.config('lua_ls', {capabilites = require('blink.cmp').get_lsp_capabilities()})
+vim.lsp.enable('lua_ls')

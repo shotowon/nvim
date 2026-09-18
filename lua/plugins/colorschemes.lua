@@ -12,5 +12,9 @@ return {
 	{
 		"Mofiqul/vscode.nvim",
 		lazy = true,
+	},
+	{
+		"neanias/everforest-nvim",
+		lazy = true,
 	}
 }

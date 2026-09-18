@@ -1,4 +1,4 @@
-require("lspconfig").rust_analyzer.setup {
+vim.lsp.config('rust_analyzer', {
 	capabilities = require('blink.cmp').get_lsp_capabilities(),
 	settings = {
 		["rust-analyzer"] = {
@@ -7,4 +7,5 @@ require("lspconfig").rust_analyzer.setup {
 			},
 		},
 	},
-}
+})
+vim.lsp.enable('rust_analyzer')

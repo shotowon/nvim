@@ -3,7 +3,11 @@ return {
 		'stevearc/oil.nvim',
 		---@module 'oil'
 		---@type oil.SetupOpts
-		opts = {},
+		opts = {
+			win_options = {
+				signcolumn = "yes:2",
+			},
+		},
 		-- Optional dependencies
 		dependencies = { { "echasnovski/mini.icons", opts = {} } },
 		-- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
@@ -26,5 +30,14 @@ return {
 
 			require("telescope").load_extension("fzf")
 		end
+	},
+	{
+	  "refractalize/oil-git-status.nvim",
+
+	  dependencies = {
+		"stevearc/oil.nvim",
+	  },
+
+	  config = true,
 	},
 }

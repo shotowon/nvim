@@ -1,5 +1,4 @@
 vim.keymap.set('n', '<leader>pv', function() 
-	local path = vim.fn.expand("%:p:h")
-	vim.cmd('e ' .. path)
+	vim.cmd('Oil')
 end)
 vim.keymap.set('v', '<C-y>', '"+y', { noremap = true, silent = true })

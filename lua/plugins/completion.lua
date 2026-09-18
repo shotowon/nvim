@@ -16,7 +16,10 @@ return {
 			},
 
 			signature = { enabled = true },
-			completion = { documentation = { auto_show = false } },
+			completion = { 
+				ghost_text = {enabled = true},
+				documentation = { auto_show = false }
+			},
 		},
 	},
 }
